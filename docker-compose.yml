@@ -1,0 +1,13 @@
+services:
+  jenkins:
+    build: ./docker
+    container_name: jenkins-mlops
+    ports:
+      - "8080:8080"     # web UI
+      - "50000:50000"   # agent port
+    volumes:
+      - jenkins_home:/var/jenkins_home
+    restart: unless-stopped
+
+volumes:
+  jenkins_home:
