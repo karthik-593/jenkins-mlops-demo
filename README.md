@@ -93,4 +93,4 @@ python3 src/evaluate.py --threshold 0.85
 docker compose down          # keep Jenkins data
 docker compose down -v       # also delete the jenkins_home volume
 ```
-#checking ci/cd
+#checking ci/cd for now
