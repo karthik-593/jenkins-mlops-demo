@@ -13,9 +13,6 @@ pipeline {
     disableConcurrentBuilds()
   }
 
-  // Uncomment to poll the Git repo every ~5 min and auto-build on change.
-  // For push-based builds instead, configure a webhook in your Git host.
-  // triggers { pollSCM('H/5 * * * *') }
 
   environment {
     VENV = "${WORKSPACE}/.venv"
