@@ -47,7 +47,7 @@ pipeline {
       steps {
         sh '''
           . "$VENV/bin/activate"
-          python3 src/validate_data.py 
+          python3 src/validate_data.py --min-rows 10000
         '''
       }
     }
